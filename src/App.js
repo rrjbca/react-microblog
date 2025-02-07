@@ -23,7 +23,7 @@ export default function App() {
       <h1>Microblog</h1>
       {posts.map(post => {
         return (
-          <p>
+          <p key={post.id}>
             <b>{post.author.username}</b> &mdash; {post.timestamp}
             <br />
             {post.text}
